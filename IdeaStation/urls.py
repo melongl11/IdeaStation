@@ -21,6 +21,9 @@ from Station.views import *
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^clusters/$', Clusters.as_view())
+    url(r'^clusters/$', Clusters.as_view()),
+    url(r'^test/$', ClustersWithN.as_view()),
+    url(r'^mandal/$', MandalArt.as_view()),
+    url(r'^mandaltest/$', MandalArtWithN.as_view())
 
 ]
